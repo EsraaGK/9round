@@ -11,13 +11,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
           
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = RegisterationFormViewController()
+        let niblessNavigationController = NiblessNavigationController()
+        let viewController: UIViewController = RegistrationFormRouter.start() ?? UIViewController()
+        niblessNavigationController.setViewControllers([viewController], animated: false)
+        window?.rootViewController = niblessNavigationController
         window?.makeKeyAndVisible()
     }
 

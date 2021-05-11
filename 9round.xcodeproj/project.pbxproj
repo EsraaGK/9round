@@ -3,19 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE533A172649859800268639 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = CE533A162649859800268639 /* SwiftMessages */; };
+		CE533A1B2649875F00268639 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE533A1A2649875F00268639 /* PromiseKit */; };
+		CE533A1F2649A06100268639 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = CE533A1E2649A06100268639 /* Moya */; };
+		CE533A252649A08C00268639 /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE533A242649A08C00268639 /* NiblessNavigationController.swift */; };
 		CE90561C26497215001CE677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90561B26497215001CE677 /* AppDelegate.swift */; };
 		CE90561E26497215001CE677 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90561D26497215001CE677 /* SceneDelegate.swift */; };
 		CE90562526497218001CE677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE90562426497218001CE677 /* Assets.xcassets */; };
 		CE90562826497218001CE677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE90562626497218001CE677 /* LaunchScreen.storyboard */; };
 		CE90563326497244001CE677 /* RegisterationFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90563126497244001CE677 /* RegisterationFormViewController.swift */; };
 		CE90563426497244001CE677 /* RegisterationFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE90563226497244001CE677 /* RegisterationFormViewController.xib */; };
+		CED293B02649BDD000EF9B47 /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED293AE2649BDD000EF9B47 /* Club.swift */; };
+		CED293B12649BDD000EF9B47 /* Addres.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED293AF2649BDD000EF9B47 /* Addres.swift */; };
+		CED293B52649BFD200EF9B47 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED293B42649BFD200EF9B47 /* Environment.swift */; };
+		CED293B92649C33D00EF9B47 /* NetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED293B82649C33D00EF9B47 /* NetworkManger.swift */; };
+		CED293BC2649C66400EF9B47 /* AuthonticationTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED293BB2649C66400EF9B47 /* AuthonticationTargetType.swift */; };
+		CEDE3ABC264AF858000DF64E /* InteractorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3ABB264AF858000DF64E /* InteractorProtocols.swift */; };
+		CEDE3ABF264B1751000DF64E /* RegistrationFormRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3ABE264B1751000DF64E /* RegistrationFormRouter.swift */; };
+		CEDE3AC2264B200A000DF64E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3AC1264B200A000DF64E /* User.swift */; };
+		CEDE3AC6264B2520000DF64E /* UIViewcontrollerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3AC5264B2520000DF64E /* UIViewcontrollerExtension.swift */; };
+		CEDE3ACA264B25A4000DF64E /* ConnectionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3AC9264B25A4000DF64E /* ConnectionCheck.swift */; };
+		CEDE3ACE264B264F000DF64E /* RegistrationFormInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3ACD264B264F000DF64E /* RegistrationFormInteractor.swift */; };
+		CEDE3AD1264B2668000DF64E /* RegistrationFormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3AD0264B2668000DF64E /* RegistrationFormPresenter.swift */; };
+		CEDE3AD5264B27A2000DF64E /* RegistrationClubsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3AD4264B27A2000DF64E /* RegistrationClubsRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE533A242649A08C00268639 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
 		CE90561826497215001CE677 /* 9round.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9round.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE90561B26497215001CE677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE90561D26497215001CE677 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +42,19 @@
 		CE90562926497218001CE677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE90563126497244001CE677 /* RegisterationFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationFormViewController.swift; sourceTree = "<group>"; };
 		CE90563226497244001CE677 /* RegisterationFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterationFormViewController.xib; sourceTree = "<group>"; };
+		CED293AE2649BDD000EF9B47 /* Club.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
+		CED293AF2649BDD000EF9B47 /* Addres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addres.swift; sourceTree = "<group>"; };
+		CED293B42649BFD200EF9B47 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		CED293B82649C33D00EF9B47 /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
+		CED293BB2649C66400EF9B47 /* AuthonticationTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthonticationTargetType.swift; sourceTree = "<group>"; };
+		CEDE3ABB264AF858000DF64E /* InteractorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorProtocols.swift; sourceTree = "<group>"; };
+		CEDE3ABE264B1751000DF64E /* RegistrationFormRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormRouter.swift; sourceTree = "<group>"; };
+		CEDE3AC1264B200A000DF64E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CEDE3AC5264B2520000DF64E /* UIViewcontrollerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewcontrollerExtension.swift; sourceTree = "<group>"; };
+		CEDE3AC9264B25A4000DF64E /* ConnectionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionCheck.swift; sourceTree = "<group>"; };
+		CEDE3ACD264B264F000DF64E /* RegistrationFormInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormInteractor.swift; sourceTree = "<group>"; };
+		CEDE3AD0264B2668000DF64E /* RegistrationFormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormPresenter.swift; sourceTree = "<group>"; };
+		CEDE3AD4264B27A2000DF64E /* RegistrationClubsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationClubsRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE533A172649859800268639 /* SwiftMessages in Frameworks */,
+				CE533A1B2649875F00268639 /* PromiseKit in Frameworks */,
+				CE533A1F2649A06100268639 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +104,14 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
+		CE533A212649A07500268639 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				CE533A242649A08C00268639 /* NiblessNavigationController.swift */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
 		CE90560F26497215001CE677 = {
 			isa = PBXGroup;
 			children = (
@@ -89,11 +131,17 @@
 		CE90561A26497215001CE677 /* 9round */ = {
 			isa = PBXGroup;
 			children = (
+				CEDE3AC8264B259C000DF64E /* Services */,
+				CEDE3AC4264B2501000DF64E /* Extension */,
+				CEDE3AB9264AF83B000DF64E /* ViperBases */,
+				CED293B32649BFB500EF9B47 /* Configuration */,
+				CED293AC2649BDD000EF9B47 /* Network */,
+				CE533A0F2649756800268639 /* Application */,
+				CE533A212649A07500268639 /* CustomClasses */,
+				CEC8896F2649A26C00036066 /* Features */,
 				CE533A132649767C00268639 /* LaunchScreen */,
 				CE533A112649765800268639 /* Resources */,
-				CE533A0F2649756800268639 /* Application */,
 				CE533A0D2649749C00268639 /* SupportingFiles */,
-				CE90563026497230001CE677 /* RegisterationFormViewController */,
 			);
 			path = 9round;
 			sourceTree = "<group>";
@@ -103,8 +151,96 @@
 			children = (
 				CE90563126497244001CE677 /* RegisterationFormViewController.swift */,
 				CE90563226497244001CE677 /* RegisterationFormViewController.xib */,
+				CEDE3ABE264B1751000DF64E /* RegistrationFormRouter.swift */,
+				CEDE3ACD264B264F000DF64E /* RegistrationFormInteractor.swift */,
+				CEDE3AD0264B2668000DF64E /* RegistrationFormPresenter.swift */,
 			);
 			path = RegisterationFormViewController;
+			sourceTree = "<group>";
+		};
+		CEC8896F2649A26C00036066 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CEC889702649A27E00036066 /* Registration */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CEC889702649A27E00036066 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE3AD3264B2782000DF64E /* RegistrationClubs */,
+				CE90563026497230001CE677 /* RegisterationFormViewController */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		CED293AC2649BDD000EF9B47 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CED293BB2649C66400EF9B47 /* AuthonticationTargetType.swift */,
+				CED293B72649C32600EF9B47 /* Core */,
+				CED293AD2649BDD000EF9B47 /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CED293AD2649BDD000EF9B47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CED293AE2649BDD000EF9B47 /* Club.swift */,
+				CED293AF2649BDD000EF9B47 /* Addres.swift */,
+				CEDE3AC1264B200A000DF64E /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CED293B32649BFB500EF9B47 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CED293B42649BFD200EF9B47 /* Environment.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		CED293B72649C32600EF9B47 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CED293B82649C33D00EF9B47 /* NetworkManger.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CEDE3AB9264AF83B000DF64E /* ViperBases */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE3ABB264AF858000DF64E /* InteractorProtocols.swift */,
+			);
+			path = ViperBases;
+			sourceTree = "<group>";
+		};
+		CEDE3AC4264B2501000DF64E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE3AC5264B2520000DF64E /* UIViewcontrollerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CEDE3AC8264B259C000DF64E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE3AC9264B25A4000DF64E /* ConnectionCheck.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CEDE3AD3264B2782000DF64E /* RegistrationClubs */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE3AD4264B27A2000DF64E /* RegistrationClubsRouter.swift */,
+			);
+			path = RegistrationClubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +259,11 @@
 			dependencies = (
 			);
 			name = 9round;
+			packageProductDependencies = (
+				CE533A162649859800268639 /* SwiftMessages */,
+				CE533A1A2649875F00268639 /* PromiseKit */,
+				CE533A1E2649A06100268639 /* Moya */,
+			);
 			productName = 9round;
 			productReference = CE90561826497215001CE677 /* 9round.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +291,11 @@
 				Base,
 			);
 			mainGroup = CE90560F26497215001CE677;
+			packageReferences = (
+				CE533A152649859800268639 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+				CE533A192649875F00268639 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				CE533A1D2649A06100268639 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = CE90561926497215001CE677 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -177,7 +323,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED293B12649BDD000EF9B47 /* Addres.swift in Sources */,
+				CEDE3AD1264B2668000DF64E /* RegistrationFormPresenter.swift in Sources */,
+				CED293B02649BDD000EF9B47 /* Club.swift in Sources */,
+				CED293B92649C33D00EF9B47 /* NetworkManger.swift in Sources */,
 				CE90561C26497215001CE677 /* AppDelegate.swift in Sources */,
+				CEDE3ACE264B264F000DF64E /* RegistrationFormInteractor.swift in Sources */,
+				CED293BC2649C66400EF9B47 /* AuthonticationTargetType.swift in Sources */,
+				CED293B52649BFD200EF9B47 /* Environment.swift in Sources */,
+				CEDE3ABC264AF858000DF64E /* InteractorProtocols.swift in Sources */,
+				CEDE3AC6264B2520000DF64E /* UIViewcontrollerExtension.swift in Sources */,
+				CEDE3AD5264B27A2000DF64E /* RegistrationClubsRouter.swift in Sources */,
+				CEDE3ABF264B1751000DF64E /* RegistrationFormRouter.swift in Sources */,
+				CEDE3ACA264B25A4000DF64E /* ConnectionCheck.swift in Sources */,
+				CEDE3AC2264B200A000DF64E /* User.swift in Sources */,
+				CE533A252649A08C00268639 /* NiblessNavigationController.swift in Sources */,
 				CE90561E26497215001CE677 /* SceneDelegate.swift in Sources */,
 				CE90563326497244001CE677 /* RegisterationFormViewController.swift in Sources */,
 			);
@@ -373,6 +533,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE533A152649859800268639 /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.2;
+			};
+		};
+		CE533A192649875F00268639 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.13.3;
+			};
+		};
+		CE533A1D2649A06100268639 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE533A162649859800268639 /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE533A152649859800268639 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
+		};
+		CE533A1A2649875F00268639 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE533A192649875F00268639 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		CE533A1E2649A06100268639 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE533A1D2649A06100268639 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE90561026497215001CE677 /* Project object */;
 }

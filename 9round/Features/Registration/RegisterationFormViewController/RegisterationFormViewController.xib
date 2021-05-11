@@ -117,31 +117,24 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x89-Qq-Re9" userLabel="ChooseClubView">
                                             <rect key="frame" x="0.0" y="285" width="414" height="94.5"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Club" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OR1-AA-VUl">
-                                                    <rect key="frame" x="16" y="8" width="382" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Club   XXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OR1-AA-VUl">
+                                                    <rect key="frame" x="16" y="8" width="382" height="78.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ZH-Zm-By4">
-                                                    <rect key="frame" x="16" y="36.5" width="382" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="ITv-GY-tud"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <gestureRecognizers/>
                                             <constraints>
                                                 <constraint firstItem="OR1-AA-VUl" firstAttribute="top" secondItem="x89-Qq-Re9" secondAttribute="top" constant="8" id="EZN-ke-Cry"/>
-                                                <constraint firstItem="3ZH-Zm-By4" firstAttribute="leading" secondItem="x89-Qq-Re9" secondAttribute="leading" constant="16" id="Nef-06-LOM"/>
-                                                <constraint firstAttribute="bottom" secondItem="3ZH-Zm-By4" secondAttribute="bottom" constant="8" id="PQo-a3-PeU"/>
-                                                <constraint firstAttribute="trailing" secondItem="3ZH-Zm-By4" secondAttribute="trailing" constant="16" id="YFn-g3-Xq1"/>
-                                                <constraint firstItem="3ZH-Zm-By4" firstAttribute="top" secondItem="OR1-AA-VUl" secondAttribute="bottom" constant="8" id="e5e-UT-7UZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="OR1-AA-VUl" secondAttribute="bottom" constant="8" id="bJk-He-SrS"/>
                                                 <constraint firstAttribute="trailing" secondItem="OR1-AA-VUl" secondAttribute="trailing" constant="16" id="ib4-mn-DUN"/>
                                                 <constraint firstItem="OR1-AA-VUl" firstAttribute="leading" secondItem="x89-Qq-Re9" secondAttribute="leading" constant="16" id="xyn-Yx-Oab"/>
                                             </constraints>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="cJV-tK-Lou" appends="YES" id="53n-Yw-7mM"/>
+                                            </connections>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZc-MQ-gsD">
                                             <rect key="frame" x="0.0" y="379.5" width="414" height="66"/>
@@ -155,6 +148,9 @@
                                                     <state key="normal" title="Register">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="register:" destination="-1" eventType="touchUpInside" id="bWE-kM-F86"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -200,6 +196,11 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-453.62318840579712" y="463.39285714285711"/>
         </view>
+        <tapGestureRecognizer id="cJV-tK-Lou">
+            <connections>
+                <action selector="chooseClub:" destination="-1" id="6or-wH-Y9l"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
