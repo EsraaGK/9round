@@ -6,15 +6,20 @@
 //
 
 import UIKit
-protocol RegistrationFormRouterProtocol: Router {
+protocol RegistrationFormRouterProtocol {
+    var view: UIViewController? {get set}
+    static func start() -> UIViewController?
+
     func showClubs()
+    func changeRootViewToLogin()
 }
 
 class RegistrationFormRouter: RegistrationFormRouterProtocol {
     weak var view: UIViewController?
-
+    
     func showClubs() {
-        let vc: UIViewController = RegistrationClubsRouter.start() ?? UIViewController()
+        let vc: UIViewController = RegistrationClubsRouter.start(delegate: view
+                                                                    as? RedistrationClubsDelegate) ?? UIViewController()
         view?.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -37,5 +42,8 @@ class RegistrationFormRouter: RegistrationFormRouterProtocol {
         return view as? UIViewController
     }
     
-    
+    func changeRootViewToLogin() {
+        ApplicationRouter.shared.startLogIn()
+    }
 }
+

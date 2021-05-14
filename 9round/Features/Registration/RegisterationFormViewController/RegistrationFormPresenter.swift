@@ -12,6 +12,7 @@ protocol RegistrationFormPresenterProtocol: BaseDataRequest, DataUpdater {
     var interactor: RegistrationFormInteractorProtocol? {get set}
     var view: RegisterationFormViewProtocol? {get set}
     func showClubs()
+    func register(_ with: User)
 }
 
 class RegistrationFormPresenter: RegistrationFormPresenterProtocol {
@@ -21,7 +22,6 @@ class RegistrationFormPresenter: RegistrationFormPresenterProtocol {
     var view: RegisterationFormViewProtocol?
     
     func getData() {
-        
         if ConnectionCheck.isConnectedToNetwork() {
             interactor?.getData()
         } else {
@@ -34,11 +34,20 @@ class RegistrationFormPresenter: RegistrationFormPresenterProtocol {
     }
     
     func update<T>(with data: T) {
-        view?.update(with: data)
+        guard let success = data as? SuccessRegistration else { return }
+         if (success.success ?? false) {
+            router?.changeRootViewToLogin()
+         } else {
+            showError(with: success.message ?? "")
+         }
     }
     
     func showError(with error: String) {
         view?.showError(with: error)
+    }
+    
+    func register(_ with: User) {
+        interactor?.register(with)
     }
 }
 

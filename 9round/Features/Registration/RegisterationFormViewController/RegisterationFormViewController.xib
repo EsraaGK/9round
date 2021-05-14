@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterationFormViewController" customModule="_round" customModuleProvider="target">
             <connections>
+                <outlet property="clubIdLabel" destination="OR1-AA-VUl" id="7qP-3v-jr8"/>
+                <outlet property="emailTextField" destination="0R0-DS-KO2" id="UXx-YG-qzu"/>
+                <outlet property="firstNameTextField" destination="wRN-iA-PQz" id="dnF-wd-EEp"/>
+                <outlet property="lastNameTextField" destination="exY-Lp-Jx0" id="66y-S4-lwc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

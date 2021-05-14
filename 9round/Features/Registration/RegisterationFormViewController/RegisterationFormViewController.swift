@@ -14,17 +14,25 @@ class RegisterationFormViewController: UIViewController {
     var presenter: RegistrationFormPresenterProtocol?
     var user = User()
     
+    @IBOutlet weak var clubIdLabel: UILabel!
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func chooseClub(_ sender: UITapGestureRecognizer) {
         presenter?.showClubs()
     }
+    
     @IBAction func register(_ sender: UIButton) {
-        
+        user.firstName = firstNameTextField.text ?? ""
+        user.lastName = lastNameTextField.text  ?? ""
+        user.email = emailTextField.text ?? ""
+        presenter?.register(user)
     }
 }
 
@@ -35,11 +43,13 @@ extension RegisterationFormViewController: RegisterationFormViewProtocol {
     
     
     func update<T>(with data: T) {
-        if let temp = data as? User {
-            user = temp
-        }
     }
+}
 
- 
-    
+extension RegisterationFormViewController: RedistrationClubsDelegate {
+    func didchoose(chainId: Int?) {
+        guard let id = chainId else { return }
+        clubIdLabel.text = "Club id: \(id)"
+        user.storeId = chainId
+    }
 }

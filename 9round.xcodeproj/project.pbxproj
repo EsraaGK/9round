@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE05494F264E88D700832CF9 /* RegistrationClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05494D264E88D700832CF9 /* RegistrationClubsViewController.swift */; };
+		CE054950264E88D700832CF9 /* RegistrationClubsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE05494E264E88D700832CF9 /* RegistrationClubsViewController.xib */; };
+		CE054953264E895E00832CF9 /* RegistrationClubsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE054952264E895E00832CF9 /* RegistrationClubsPresenter.swift */; };
+		CE054956264E899200832CF9 /* RegistrationClubsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE054955264E899200832CF9 /* RegistrationClubsInteractor.swift */; };
+		CE054959264E987200832CF9 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE054958264E987200832CF9 /* UITableViewExtensions.swift */; };
+		CE05495C264E98A700832CF9 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05495B264E98A700832CF9 /* UITableViewCellExtension.swift */; };
+		CE054961264E98E500832CF9 /* ClubsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05495F264E98E500832CF9 /* ClubsTableViewCell.swift */; };
+		CE054962264E98E500832CF9 /* ClubsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE054960264E98E500832CF9 /* ClubsTableViewCell.xib */; };
+		CE054965264ECF9C00832CF9 /* SuccessRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE054964264ECF9C00832CF9 /* SuccessRegistration.swift */; };
+		CE054968264ED1F900832CF9 /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE054967264ED1F900832CF9 /* ApplicationRouter.swift */; };
 		CE533A172649859800268639 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = CE533A162649859800268639 /* SwiftMessages */; };
 		CE533A1B2649875F00268639 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE533A1A2649875F00268639 /* PromiseKit */; };
 		CE533A1F2649A06100268639 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = CE533A1E2649A06100268639 /* Moya */; };
@@ -33,6 +43,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE05494D264E88D700832CF9 /* RegistrationClubsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationClubsViewController.swift; sourceTree = "<group>"; };
+		CE05494E264E88D700832CF9 /* RegistrationClubsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationClubsViewController.xib; sourceTree = "<group>"; };
+		CE054952264E895E00832CF9 /* RegistrationClubsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationClubsPresenter.swift; sourceTree = "<group>"; };
+		CE054955264E899200832CF9 /* RegistrationClubsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationClubsInteractor.swift; sourceTree = "<group>"; };
+		CE054958264E987200832CF9 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		CE05495B264E98A700832CF9 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		CE05495F264E98E500832CF9 /* ClubsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsTableViewCell.swift; sourceTree = "<group>"; };
+		CE054960264E98E500832CF9 /* ClubsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClubsTableViewCell.xib; sourceTree = "<group>"; };
+		CE054964264ECF9C00832CF9 /* SuccessRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessRegistration.swift; sourceTree = "<group>"; };
+		CE054967264ED1F900832CF9 /* ApplicationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
 		CE533A242649A08C00268639 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
 		CE90561826497215001CE677 /* 9round.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9round.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE90561B26497215001CE677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE05495E264E98C800832CF9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE05495F264E98E500832CF9 /* ClubsTableViewCell.swift */,
+				CE054960264E98E500832CF9 /* ClubsTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		CE533A0D2649749C00268639 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +113,7 @@
 			children = (
 				CE90561B26497215001CE677 /* AppDelegate.swift */,
 				CE90561D26497215001CE677 /* SceneDelegate.swift */,
+				CE054967264ED1F900832CF9 /* ApplicationRouter.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -191,6 +221,7 @@
 				CED293AE2649BDD000EF9B47 /* Club.swift */,
 				CED293AF2649BDD000EF9B47 /* Addres.swift */,
 				CEDE3AC1264B200A000DF64E /* User.swift */,
+				CE054964264ECF9C00832CF9 /* SuccessRegistration.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,6 +254,8 @@
 			isa = PBXGroup;
 			children = (
 				CEDE3AC5264B2520000DF64E /* UIViewcontrollerExtension.swift */,
+				CE054958264E987200832CF9 /* UITableViewExtensions.swift */,
+				CE05495B264E98A700832CF9 /* UITableViewCellExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -238,7 +271,12 @@
 		CEDE3AD3264B2782000DF64E /* RegistrationClubs */ = {
 			isa = PBXGroup;
 			children = (
+				CE05495E264E98C800832CF9 /* Cell */,
 				CEDE3AD4264B27A2000DF64E /* RegistrationClubsRouter.swift */,
+				CE05494D264E88D700832CF9 /* RegistrationClubsViewController.swift */,
+				CE05494E264E88D700832CF9 /* RegistrationClubsViewController.xib */,
+				CE054952264E895E00832CF9 /* RegistrationClubsPresenter.swift */,
+				CE054955264E899200832CF9 /* RegistrationClubsInteractor.swift */,
 			);
 			path = RegistrationClubs;
 			sourceTree = "<group>";
@@ -313,6 +351,8 @@
 				CE90562826497218001CE677 /* LaunchScreen.storyboard in Resources */,
 				CE90562526497218001CE677 /* Assets.xcassets in Resources */,
 				CE90563426497244001CE677 /* RegisterationFormViewController.xib in Resources */,
+				CE054962264E98E500832CF9 /* ClubsTableViewCell.xib in Resources */,
+				CE054950264E88D700832CF9 /* RegistrationClubsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +363,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE054965264ECF9C00832CF9 /* SuccessRegistration.swift in Sources */,
+				CE054968264ED1F900832CF9 /* ApplicationRouter.swift in Sources */,
+				CE054959264E987200832CF9 /* UITableViewExtensions.swift in Sources */,
 				CED293B12649BDD000EF9B47 /* Addres.swift in Sources */,
+				CE054956264E899200832CF9 /* RegistrationClubsInteractor.swift in Sources */,
 				CEDE3AD1264B2668000DF64E /* RegistrationFormPresenter.swift in Sources */,
 				CED293B02649BDD000EF9B47 /* Club.swift in Sources */,
 				CED293B92649C33D00EF9B47 /* NetworkManger.swift in Sources */,
@@ -332,14 +376,18 @@
 				CED293BC2649C66400EF9B47 /* AuthonticationTargetType.swift in Sources */,
 				CED293B52649BFD200EF9B47 /* Environment.swift in Sources */,
 				CEDE3ABC264AF858000DF64E /* InteractorProtocols.swift in Sources */,
+				CE054953264E895E00832CF9 /* RegistrationClubsPresenter.swift in Sources */,
+				CE05494F264E88D700832CF9 /* RegistrationClubsViewController.swift in Sources */,
 				CEDE3AC6264B2520000DF64E /* UIViewcontrollerExtension.swift in Sources */,
 				CEDE3AD5264B27A2000DF64E /* RegistrationClubsRouter.swift in Sources */,
 				CEDE3ABF264B1751000DF64E /* RegistrationFormRouter.swift in Sources */,
+				CE054961264E98E500832CF9 /* ClubsTableViewCell.swift in Sources */,
 				CEDE3ACA264B25A4000DF64E /* ConnectionCheck.swift in Sources */,
 				CEDE3AC2264B200A000DF64E /* User.swift in Sources */,
 				CE533A252649A08C00268639 /* NiblessNavigationController.swift in Sources */,
 				CE90561E26497215001CE677 /* SceneDelegate.swift in Sources */,
 				CE90563326497244001CE677 /* RegisterationFormViewController.swift in Sources */,
+				CE05495C264E98A700832CF9 /* UITableViewCellExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
