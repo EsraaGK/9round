@@ -4,8 +4,6 @@
 <dict>
 	<key>BASE_URL</key>
 	<string>https://clubready.com/api/current</string>
-	<key>KEY_API</key>
-	<string>6f8d1ba1-8ffa-43a8-b6a2-79a69e262ca5</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -21,7 +19,9 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>KEY_API</key>
+	<string>6f8d1ba1-8ffa-43a8-b6a2-79a69e262ca5</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>
