@@ -30,6 +30,19 @@ class NetworkManger {
                         } catch (let parseError) {
                             resolver.reject(parseError)
                         }
+                    } else {
+                        do {
+                            let serverError = try JSONDecoder().decode(ApplicationError.self, from: response.data)
+                            if let error = serverError.responseStatus {
+                                resolver.reject(error)
+                            } else {
+                                resolver.reject(MoyaError.jsonMapping(response))
+                            }
+                            
+                        } catch (let parseError) {
+                            resolver.reject(parseError)
+                        }
+                        
                     }
                     
                 case .failure(let error):

@@ -17,6 +17,10 @@
 		CE054962264E98E500832CF9 /* ClubsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE054960264E98E500832CF9 /* ClubsTableViewCell.xib */; };
 		CE054965264ECF9C00832CF9 /* SuccessRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE054964264ECF9C00832CF9 /* SuccessRegistration.swift */; };
 		CE054968264ED1F900832CF9 /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE054967264ED1F900832CF9 /* ApplicationRouter.swift */; };
+		CE270BF02652A4CE001A0C90 /* ResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE270BEC2652A4CD001A0C90 /* ResponseStatus.swift */; };
+		CE270BF12652A4CE001A0C90 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE270BED2652A4CD001A0C90 /* ApplicationError.swift */; };
+		CE270BF22652A4CE001A0C90 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE270BEE2652A4CE001A0C90 /* Meta.swift */; };
+		CE270BF32652A4CE001A0C90 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE270BEF2652A4CE001A0C90 /* Error.swift */; };
 		CE533A172649859800268639 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = CE533A162649859800268639 /* SwiftMessages */; };
 		CE533A1B2649875F00268639 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE533A1A2649875F00268639 /* PromiseKit */; };
 		CE533A1F2649A06100268639 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = CE533A1E2649A06100268639 /* Moya */; };
@@ -55,6 +59,10 @@
 		CE054960264E98E500832CF9 /* ClubsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClubsTableViewCell.xib; sourceTree = "<group>"; };
 		CE054964264ECF9C00832CF9 /* SuccessRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessRegistration.swift; sourceTree = "<group>"; };
 		CE054967264ED1F900832CF9 /* ApplicationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
+		CE270BEC2652A4CD001A0C90 /* ResponseStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseStatus.swift; sourceTree = "<group>"; };
+		CE270BED2652A4CD001A0C90 /* ApplicationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
+		CE270BEE2652A4CE001A0C90 /* Meta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		CE270BEF2652A4CE001A0C90 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		CE533A242649A08C00268639 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
 		CE89D995265295D400369597 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE89D996265295D400369597 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
@@ -102,6 +110,17 @@
 				CE054960264E98E500832CF9 /* ClubsTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		CE270BEB2652A49F001A0C90 /* ApplicationError */ = {
+			isa = PBXGroup;
+			children = (
+				CE270BEF2652A4CE001A0C90 /* Error.swift */,
+				CE270BEE2652A4CE001A0C90 /* Meta.swift */,
+				CE270BEC2652A4CD001A0C90 /* ResponseStatus.swift */,
+				CE270BED2652A4CD001A0C90 /* ApplicationError.swift */,
+			);
+			path = ApplicationError;
 			sourceTree = "<group>";
 		};
 		CE533A0D2649749C00268639 /* SupportingFiles */ = {
@@ -214,6 +233,7 @@
 		CED293AC2649BDD000EF9B47 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				CE270BEB2652A49F001A0C90 /* ApplicationError */,
 				CED293BB2649C66400EF9B47 /* AuthonticationTargetType.swift */,
 				CED293B72649C32600EF9B47 /* Core */,
 				CED293AD2649BDD000EF9B47 /* Models */,
@@ -374,6 +394,7 @@
 				CE054968264ED1F900832CF9 /* ApplicationRouter.swift in Sources */,
 				CE054959264E987200832CF9 /* UITableViewExtensions.swift in Sources */,
 				CED293B12649BDD000EF9B47 /* Addres.swift in Sources */,
+				CE270BF12652A4CE001A0C90 /* ApplicationError.swift in Sources */,
 				CE054956264E899200832CF9 /* RegistrationClubsInteractor.swift in Sources */,
 				CEDE3AD1264B2668000DF64E /* RegistrationFormPresenter.swift in Sources */,
 				CED293B02649BDD000EF9B47 /* Club.swift in Sources */,
@@ -390,11 +411,14 @@
 				CEDE3AD5264B27A2000DF64E /* RegistrationClubsRouter.swift in Sources */,
 				CEDE3ABF264B1751000DF64E /* RegistrationFormRouter.swift in Sources */,
 				CE054961264E98E500832CF9 /* ClubsTableViewCell.swift in Sources */,
+				CE270BF22652A4CE001A0C90 /* Meta.swift in Sources */,
 				CEDE3ACA264B25A4000DF64E /* ConnectionCheck.swift in Sources */,
 				CEDE3AC2264B200A000DF64E /* User.swift in Sources */,
 				CE533A252649A08C00268639 /* NiblessNavigationController.swift in Sources */,
+				CE270BF02652A4CE001A0C90 /* ResponseStatus.swift in Sources */,
 				CE90561E26497215001CE677 /* SceneDelegate.swift in Sources */,
 				CE90563326497244001CE677 /* RegisterationFormViewController.swift in Sources */,
+				CE270BF32652A4CE001A0C90 /* Error.swift in Sources */,
 				CE05495C264E98A700832CF9 /* UITableViewCellExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
