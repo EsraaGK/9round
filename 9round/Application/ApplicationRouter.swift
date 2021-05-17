@@ -30,7 +30,7 @@ class ApplicationRouter {
     
      func startLogIn() {
         let niblessNavigationController = NiblessNavigationController()
-        niblessNavigationController.setViewControllers([UIViewController()], animated: false)
+        niblessNavigationController.setViewControllers([ViewController()], animated: false)
         window?.rootViewController = niblessNavigationController
     }
 }
